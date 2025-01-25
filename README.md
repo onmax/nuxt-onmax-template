@@ -5,11 +5,9 @@ A template I use for my personal projects.
 ## Features
 
 - Nuxt 3 + NuxtHub
-  <<<<<<< HEAD
 - # Eslint + UnoCSS + VueUse
 - Eslint + UnoCSS + VueUse + Radix
-  > > > > > > > 503be95 (chore: unocss, eslint, vueuse, radix)
-- Auth with `nuxt-auth-utils`
+- Auth with `better-auth` using this [template](https://github.com/atinux/nuxthub-better-auth/blob/main/package.json)
 - Ready to add a database, blob and KV storage
 - One click deploy on 275+ locations for free
 

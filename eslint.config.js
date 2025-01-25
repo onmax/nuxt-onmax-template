@@ -5,4 +5,14 @@ export default withNuxt(antfu({
   formatters: true,
   vue: true,
   unocss: true,
+}, {
+  rules: {
+    'unused-imports/no-unused-vars': [
+      'error',
+      {
+        caughtErrors: 'all',
+        caughtErrorsIgnorePattern: '^_',
+      },
+    ],
+  },
 }))
