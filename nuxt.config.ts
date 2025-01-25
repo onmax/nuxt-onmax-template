@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    'radix-vue/nuxt',
   ],
 
   eslint: {
