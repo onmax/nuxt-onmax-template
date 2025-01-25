@@ -1,7 +1,8 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.15.3",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,21 +10,37 @@
     "preview": "npx nuxthub preview",
     "deploy": "npx nuxthub deploy",
     "postinstall": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.7.5",
     "@nuxthub/core": "^0.8.11",
     "nuxt": "^3.15.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.16.0",
+    "@nuxt/eslint": "^0.7.5",
     "@nuxt/eslint-config": "^0.7.5",
-    "eslint": "^9.18.0",
+    "@unocss/eslint-plugin": "^65.4.3",
+    "@unocss/nuxt": "^65.4.3",
+    "@vueuse/core": "^12.5.0",
+    "@vueuse/nuxt": "^12.5.0",
+    "eslint": "^9.19.0",
+    "eslint-plugin-format": "^1.0.1",
+    "lint-staged": "^15.4.2",
+    "simple-git-hooks": "^2.11.1",
     "typescript": "^5.7.3",
+    "unocss": "^65.4.3",
+    "unocss-preset-scale-px": "^0.0.1",
     "vue-tsc": "^2.2.0",
     "wrangler": "^3.101.0"
   },
-  "packageManager": "pnpm@9.15.3"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
 }
