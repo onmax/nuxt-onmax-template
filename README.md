@@ -5,11 +5,10 @@ A template I use for my personal projects.
 ## Features
 
 - Nuxt 3 + NuxtHub
-<<<<<<< HEAD
-- Eslint + UnoCSS + VueUse
-=======
+  <<<<<<< HEAD
+- # Eslint + UnoCSS + VueUse
 - Eslint + UnoCSS + VueUse + Radix
->>>>>>> 503be95 (chore: unocss, eslint, vueuse, radix)
+  > > > > > > > 503be95 (chore: unocss, eslint, vueuse, radix)
 - Auth with `nuxt-auth-utils`
 - Ready to add a database, blob and KV storage
 - One click deploy on 275+ locations for free

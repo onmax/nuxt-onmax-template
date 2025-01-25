@@ -11,10 +11,13 @@
     "deploy": "npx nuxthub deploy",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "db:generate": "drizzle-kit generate"
+
   },
   "dependencies": {
     "@nuxthub/core": "^0.8.11",
+    "drizzle-orm": "^0.38.4",
     "nuxt": "^3.15.1",
     "radix-vue": "^1.9.12",
     "vue": "^3.5.13",
@@ -28,6 +31,7 @@
     "@unocss/nuxt": "^65.4.3",
     "@vueuse/core": "^12.5.0",
     "@vueuse/nuxt": "^12.5.0",
+    "drizzle-kit": "^0.30.2",
     "eslint": "^9.19.0",
     "eslint-plugin-format": "^1.0.1",
     "lint-staged": "^15.4.2",
